@@ -36,6 +36,13 @@ namespace ExampleInterfaces
             {
                 Console.WriteLine(myPetList.GetAt(i));
             }
+
+            MyObjectList myCarList = new MyObjectList();
+            myCarList.Add(new Car("BMW", 300));
+            myCarList.Add(new Car("Audi", 200));
+            myCarList.Add(new Car("Mercedes", 350));
+            myCarList.Add(new Car("Audi", 200));
+            Console.WriteLine(myCarList.GetHighestElement());
         }
     }
 }
